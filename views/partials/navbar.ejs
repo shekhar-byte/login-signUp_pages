@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-lg mb-3 ">
+    <div class="container-fluid">
+        <a class="navbar-brand" id="logo" href="/"><i class="fa-solid fa-school"></i>&nbsp;Pages</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <% if(!currentUser){ %>
+            <a href="/login" class="nav-link">Login</a>
+            <a href="/register" class="nav-link">Sign Up</a>
+            <% }else{ %>
+                <a href="/logout" class="nav-link">Logout</a>
+                <% } %>
+    </div>
+    </div>
+</nav>
